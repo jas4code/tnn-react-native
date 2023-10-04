@@ -1,12 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Header from './components/header';
-
 export default function App() {
 	return (
 		<View style={styles.container}>
-			<Text>This is lesson3</Text>
+			<Text>Open up App.js to start woking on your app!</Text>
 		</View>
 	);
 }
