@@ -1,6 +1,7 @@
 import React from 'react';
-import Home from './screens/home';
+// import Home from './screens/home';
 import { useFonts } from 'expo-font';
+import Navigator from './routes/navigator';
 
 export default function App() {
 	const [fontsLoaded] = useFonts({
@@ -9,9 +10,9 @@ export default function App() {
 	});
 
 	if (!fontsLoaded) {
+		// You can render a loading screen or fallback while fonts are loading
 		return null;
 	} else {
-		// You can render a loading screen or fallback while fonts are loading
-		return <Home />;
+		return <Navigator />;
 	}
 }
